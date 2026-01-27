@@ -14,13 +14,6 @@ def limpar_tela():
 
 limpar_tela()
 
-
-print(PURPLE + """
-Depois de pensar um pouco, decidi te dar esse arquivo especial 💜
-Ele tem um menu com algumas coisinhas que eu implementei só pra você.
-Espero muito que você goste!
-""" + RESET)
-
 time.sleep(2)
 
 limpar_tela()
@@ -31,7 +24,7 @@ if os.path.exists("art_ascii"):
 while True:
     opcao = input(PURPLE + """
 ========================
-Menu 💜
+Menu
 [1] Ver quanto tempo faz que eu te conheço
 [2] Executar o código
 [3] Iniciar site
@@ -49,7 +42,7 @@ Escolha uma opção: """ + RESET)
 
     elif opcao == '2':
         print(PURPLE + "\nExecutando seu código especial...\n" + RESET)
-        subprocess.run(['python3', 'we_LOVE_samy_LOVE_SO_MUCH.py'])
+        subprocess.run(['python3', 'Code.py'])
 
     elif opcao == '3':
         print(PURPLE + "\nIniciando seu site de presente...\n" + RESET)
@@ -69,5 +62,6 @@ Escolha uma opção: """ + RESET)
     else:
         print(PURPLE + "\nOpção inválida 😅 tenta de novo!\n" + RESET)
         time.sleep(1)
+
 
 
