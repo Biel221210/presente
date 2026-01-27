@@ -53,7 +53,7 @@ Escolha uma opção: """ + RESET)
 
     elif opcao == '3':
         print(PURPLE + "\nIniciando seu site de presente...\n" + RESET)
-        subprocess.run(['python3', 'love_samy_site.py'])
+        subprocess.run(['python3', 'site.py'])
 
     elif opcao == '4':
         print(PURPLE + "\nPreparando a declaração...\n" + RESET)
@@ -69,4 +69,5 @@ Escolha uma opção: """ + RESET)
     else:
         print(PURPLE + "\nOpção inválida 😅 tenta de novo!\n" + RESET)
         time.sleep(1)
+
 
