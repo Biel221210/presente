@@ -32,10 +32,10 @@ while True:
     opcao = input(PURPLE + """
 ========================
 Menu 💜
-[1] Ver quanto tempo faz desde que a gente se conheceu
-[2] Executar o código especial que eu fiz pra você
-[3] Iniciar seu site de presente
-[4] Mostrar o quanto eu te amo
+[1] Ver quanto tempo faz que eu te conheço
+[2] Executar o código
+[3] Iniciar site
+[4] Mostrar o quanto eu te considero
 [0] Sair
 ========================
 Escolha uma opção: """ + RESET)
@@ -44,7 +44,7 @@ Escolha uma opção: """ + RESET)
         data_conhecimento = datetime.datetime(2020, 1, 26)
         data_atual = datetime.datetime.now()
         tempo_juntos = data_atual - data_conhecimento
-        print(PURPLE + f"\nNós nos conhecemos há {tempo_juntos.days} dias 🥺💜\n" + RESET)
+        print(PURPLE + f"\nTe conheço há {tempo_juntos.days} dias\n" + RESET)
         time.sleep(2)
 
     elif opcao == '2':
@@ -58,17 +58,15 @@ Escolha uma opção: """ + RESET)
     elif opcao == '4':
         print(PURPLE + "\nPreparando a declaração...\n" + RESET)
         time.sleep(2)
-        a = 0
-        b = 100
-        for i in range(b):
-            print('Te amo')
+        print('É nois (vc realmente achou que fosse algo a mais?)')
         input(PURPLE + "\nPressione Enter para voltar ao menu..." + RESET)
 
     elif opcao == '0':
-        print(PURPLE + "\nTchau 💜 Espero que você tenha gostado do presente!" + RESET)
+        print(PURPLE + "\nRala veinho" + RESET)
         time.sleep(1)
         sys.exit()
 
     else:
         print(PURPLE + "\nOpção inválida 😅 tenta de novo!\n" + RESET)
         time.sleep(1)
+
